@@ -39,11 +39,14 @@ int main() {
     // }
 
 
-
-    int i = 0;
-    int pairs = 0;
-    while (colors[i] != 0) {
-        pairs = colors[i] / 2;
+    vector<int> pairs;
+    for (int i = 0; i < colors.size(); ++i) {
+        if (colors[i] != 0) {
+            pairs.push_back(colors[i] / 2);
+        }
+    }
+    for (vector<int>::iterator it = pairs.begin(); it != pairs.end(); ++it) {
+        cout << *it << ' ';
     }
 
 
