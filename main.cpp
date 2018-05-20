@@ -45,9 +45,15 @@ int main() {
             pairs.push_back(colors[i] / 2);
         }
     }
+    // for (vector<int>::iterator it = pairs.begin(); it != pairs.end(); ++it) {
+    //     cout << *it << ' ';
+    // }
+
+    int totalPairs = 0;
     for (vector<int>::iterator it = pairs.begin(); it != pairs.end(); ++it) {
-        cout << *it << ' ';
+        totalPairs += *it;
     }
+    cout << totalPairs;
 
 
     
