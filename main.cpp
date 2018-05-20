@@ -31,7 +31,20 @@ int main() {
     for (vector<int>::iterator it = ints.begin(); it != ints.end(); ++it) {
         colors[*it - 1]++;
     }
-    cout << "The number of occurences of 10 is: " << colors[9] << endl;
+    // cout << "The number of occurences of 10 is: " << colors[9] << endl;
+    // for (int i = 0; i < colors.size(); ++i) {
+    //     if (colors[i] != 0) {
+    //         cout << "index: " << i <<  " occurences is: " << colors[i] << endl;
+    //     }
+    // }
+
+
+
+    int i = 0;
+    int pairs = 0;
+    while (colors[i] != 0) {
+        pairs = colors[i] / 2;
+    }
 
 
     
