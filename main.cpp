@@ -23,6 +23,16 @@ int main() {
     vector<int> ints = read_ints(n);
 
     array<int, 99> colors;
+    colors.fill(0);
+    // for (int i = 0; i < colors.size(); ++i) {
+    //     cout << colors[i] << ' ';
+    // }
+
+    for (vector<int>::iterator it = ints.begin(); it != ints.end(); ++it) {
+        colors[*it - 1]++;
+    }
+    cout << "The number of occurences of 10 is: " << colors[9] << endl;
+
 
     
     return 0;
