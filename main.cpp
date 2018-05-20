@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <array>
 
 using namespace std;
 
@@ -19,8 +20,9 @@ int main() {
     cin >> n;
     // cout << n << endl;
 
-    vector<int> colors = read_ints(n);
-    
+    vector<int> ints = read_ints(n);
+
+    array<int, 99> colors;
 
     
     return 0;
