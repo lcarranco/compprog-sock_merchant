@@ -22,7 +22,8 @@ int main() {
 
     vector<int> ints = read_ints(n);
 
-    array<int, 99> colors;
+    array<int, 100> colors;
+    // cout << colors.size();
     colors.fill(0);
     // for (int i = 0; i < colors.size(); ++i) {
     //     cout << colors[i] << ' ';
@@ -52,10 +53,10 @@ int main() {
     int totalPairs = 0;
     for (vector<int>::iterator it = pairs.begin(); it != pairs.end(); ++it) {
         totalPairs += *it;
+        // cout << totalPairs << ' ';
     }
+    // cout << endl;
     cout << totalPairs;
-
-
     
     return 0;
 }
